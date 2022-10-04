@@ -121,7 +121,6 @@ span {
   font-size: 0.875rem;
   letter-spacing: 0.01rem;
   color: #757575;
-
   position: absolute;
   top: 50%;
   left: 2.625rem;
@@ -166,4 +165,36 @@ button {
 }
 .list.ordered {
   list-style: decimal;
+}
+
+/* placeholder */
+input::placeholder {
+  color: rebeccapurple;
+}
+/* focus-within */
+label:focus-within span {
+  opacity: 1;
+}
+form:focus-within button[type="submit"] {
+  opacity: 0.6;
+  background-color: seagreen;
+}
+
+/* form:focus-within {
+  box-shadow: 1px 1px 2px 2px hsla(0, 0%, 0%, 0.3);
+} */
+/* valid */
+form:valid button {
+  color: #fff;
+  pointer-events: none;
+}
+/* combination  */
+form:focus-within:valid button {
+  opacity: 1;
+}
+input:not(:placeholder-shown):valid {
+  border-color: seagreen;
+}
+input:not(:placeholder-shown):invalid {
+  border-color: crimson;
 }
