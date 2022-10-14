@@ -136,7 +136,7 @@ input:not(:placeholder-shown) + span {
   color: #2196f3;
   transform: translate(-1.5rem, -2.3rem);
 }
-button {
+form button {
   --h: 3.125rem;
   height: var(--h);
   line-height: var(--h);
@@ -166,4 +166,91 @@ button {
 }
 .list.ordered {
   list-style: decimal;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+}
+.text {
+  color: white;
+  background-color: #84a178;
+  border-radius: 10px;
+  width: 280px;
+  padding: 34px 39px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: calc(31 / 12);
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.avatar {
+  display: block;
+  position: relative;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  background: #6e6e6e;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.descr {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(37 / 20);
+  text-align: center;
+  color: #131313;
+}
+
+.slide {
+  margin-bottom: 14px;
+}
+.slider_pagination_btn {
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0 auto;
+}
+.slider_pagination_btn:before {
+  content: "";
+  display: inline-block;
+  padding: 6px;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+}
+
+.slider_pagination_btn:hover:before {
+  background-color: #aaa;
+}
+
+.slider_pagination_btn:focus:before {
+  background-color: #aaa;
+}
+.slider_pagination_btn.slider_pagination_btn--sel:before {
+  background-color: #84a178;
 }
